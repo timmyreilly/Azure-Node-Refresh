@@ -8,7 +8,7 @@ var vaultUri = "https://valut.auzre.net/secrets/guid";
 
 var authenticator = function (challenge, callback) {
     var context = new AuthenticationContext(challenge.authorization); 
-    return context.acquireTokenWithClientCredentials(challenge.resource, clientId, clientSecret, function(tokenResponse) {
+    return context.acquireTokenWithClientCredentials(challenge.resource, clientId, clientSecret, function(err, tokenResponse) {
         if(err) throw err; 
         var authorizationValue = tokenResponse.tokenType + " " + tokenResponse.accessToken; 
         return callback(null, authorizationValue); 
