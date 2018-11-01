@@ -138,6 +138,48 @@ Access to enterprise-grade features of Microsoft Azure
 Reduces the complexity and operational overhead of managing a Kubernetes cluster by offloading much of that responsibility to Azure
 Handle critical tasks like helth monitoring and maintenance for you. 
 
+Benefits of Azure Kubernetes service:
+- Automated Kubernetes version upgrades and patching
+- Easy cluster scaling
+- Self-healing hosted control plane (masters)
+- Cost savings
+
+Why should I use AKS over other providers? 
+Beyond Managed Kubernetes
+Lots of container platform as a service offerings 
+
+ACI (Azure Container Instances)
+Host a container -> deploy containers 
+Jenkins server to do your tasks and tear it down right away 
+ACI connector -> can dispatch to ACI (kubernetes worker nodes)
+
+Virtual Kubelet -> registers itself as a node, and allows you to program your own behaviors on pods and containers
+
+ACR (Azure Container Registry) 
+Allows you to store images (DC/OS, Swarm, etc)
+Global Distibution of Images - integrates with current tools
+
+Service Fabric - powers core azure services
+Designed to deliver highly available and durable services at-cloud scale
+Microsoft's container orchestrator deploying microservices across a cluster of machines
+Service Fabric is a perfect choice as a container orchestrator
+Runs Everywhere - on prem, azure, or any cloud vendor, linux or windows, stateless or stateful - built in programming models, or containerized stateful container
+Service Fabric Mesh - no overhead of cluster management, and patching
+
+Azure Web App for Containers - Azure App Services for Containerized web applications, autoscaling, acr/github/dockerhub 
+Apps updated when image updates - slots
+
+Azure Batch Service - Cloud scale scheduling and compute management on containers now
+Provides an easy way to run batch tasks
+Batch Shipyard Introduction 
+
+Not entirely sure why we should choose Azure as our orchestration platform, the main point is that there are other services! That's why you should use AKS? 
+
+### AKS in Action: 
+
+
+
+ 
 
 
 
